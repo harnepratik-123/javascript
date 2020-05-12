@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <center>
+  <h3>Max number</h3>
+</head>
+<body>
+		1st no:<input id="x"><br/><br/>
+		2nd no:<input id="y"><br/><br/>
+		3rd no:<input id="z"><br/><br/>
+		<button id="go" onclick="max_num(x,y,z)">max</button><br/>
+	<div id="result"></div>
+	<script >
+	function max_num(a,b,c) {
+    var x = Number(document.getElementById(a).value);
+    var y = Number(document.getElementById(b).value);
+	var z = Number(document.getElementById(c').value);
+	document.getElementById('result').innerHTML = Math.max(x , y, z);   
+}
+	</script>
+</center>
+<body>
+</html>
