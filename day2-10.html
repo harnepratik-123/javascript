@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<center>
+	<h3>Day2-9</h3>
+	Enter mobile no:<input id="number"><br/><br/><br/>
+	<button onclick="mob(number.value)">Check it</button>
+	<p id="demo"></p>
+	<script>
+	function mob(a){
+	if(a.value == "") 
+	{
+    document.getElementById("demo").innerHTML = "Error: Cell number must not be null.";
+	}
+	if(a.length != 10) 
+	{
+    document.getElementById("demo").innerHTML = "Phone number must be 10 digits.";
+	}
+	if(a.length == 10)
+	{
+	document.getElementById("demo").innerHTML = "correct";
+	}
+	}
+	</script>
