@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<center>
+	<h3>Day2-9</h3>
+	Enter email:<input id="x"><br/><br/><br/>
+	<button onclick="myFunction()">Check it</button>
+	<p id="demo"></p>
+	<script>
+	function myFunction() {
+	var str = String(document.getElementById('x').value);
+	var n = str.includes("@");
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
