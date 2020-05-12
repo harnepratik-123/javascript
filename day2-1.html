@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>day2-1</h2>
+<button id="go" onclick="max_()">max</button><br/>
+<p id="demo"></p>
+
+<script>
+function max_() {
+var arr = [1,12,3,54,87,11,26,39];
+document.getElementById("demo").innerHTML = Math.max.apply(null,arr);
+}
+</script>
+
+</body>
+</html>

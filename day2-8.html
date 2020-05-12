@@ -1,0 +1,19 @@
+<html>
+<body>
+	<center>
+	<h3> Day2-8 </h3>
+	<button onclick="descending()">Answer</button><br/><br/>
+	Array : <p id="a"> </p><br/>
+	Reversed array : <p id="b"> </p>
+	<script>
+	function descending(){
+        var c=["aa","bb","cc","dd","ee"];
+        document.getElementById("a").innerHTML=c;
+		c.sort();
+		c.reverse();
+		document.getElementById("b").innerHTML=c;
+    }
+	</script>
+	<center>
+</body>
+</html>
