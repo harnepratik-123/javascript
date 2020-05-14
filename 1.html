@@ -10,14 +10,11 @@
 		1st no:<input id="x"><br/><br/>
 		2nd no:<input id="y"><br/><br/>
 		3rd no:<input id="z"><br/><br/>
-		<button id="go" onclick="max_num(x,y,z)">max</button><br/>
+		<button id="go" onclick="max_num(x.value,y.value,z.value)">max</button><br/>
 	<div id="result"></div>
 	<script >
 	function max_num(a,b,c) {
-    var x = Number(document.getElementById(a).value);
-    var y = Number(document.getElementById(b).value);
-	var z = Number(document.getElementById(c').value);
-	document.getElementById('result').innerHTML = Math.max(x , y, z);   
+	document.getElementById('result').innerHTML = Math.max(a , b, c);   
 }
 	</script>
 </center>
