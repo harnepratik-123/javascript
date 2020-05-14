@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+	<body>
+	<center>
+	<h3>day3-1(factorial using arrow function)</h3>
+	number: <input id="a" required/><br/>		
+		<p id="demo"></p><br/><br/>
+		<input type="submit" onclick="document.getElementById('demo').innerHTML = fact(a.value)"/>
+		<script>
+			fact = n=>(n<2)?1:fact(n-1)*n;
+		</script>
+	</center>
+	</body>
+</html>
