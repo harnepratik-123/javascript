@@ -1,0 +1,35 @@
+<!--Create class Employee which has instance member id, name , salary, net salary. 
+Also Write getter setter for each instance member. Write calculate net salary function 
+whose job is to calculate net salary after deduction of 10 % TDS. Create 2 objects of 
+the class and call method(using constructor)-->
+<!doctype html>
+<html>
+	<body>
+	<center>
+		<h3>Q1</h3>
+		<p id="obj1"></p>
+		<p id="obj2"></p>
+		<script>
+			class Employee
+			{
+				constructor(_id,_name,_salary)
+				{
+				this.id=_id;
+				this.name=_name;
+				this.salary=_salary;
+				this.net_sal=0;
+				}
+				calculate_net_sal(salary)
+				{
+					var net = this.salary * 0.9;
+					return net;
+				}
+			}
+
+			var emp = new Employee(1,"Prasad",1000);
+			document.getElementById("obj1").innerHTML = "id=" + emp.id +" " + "name=" +emp.name + " " +
+			"salary=" + emp.salary + "" + "net_salary" + emp.calculate_net_sal(); 
+		</script>
+	</center>
+	</body>
+</html>

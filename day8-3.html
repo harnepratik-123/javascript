@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<body>
+	<center>
+		<h3>Q1</h3>
+		id no:<input id="x"><br/><br/>
+		name:<input id="y"><br/><br/>
+		salary:<input id="z"><br/><br/>
+		<button id="go" onclick="emp(x.value,y.value,z.value)">print</button><br/>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<script>
+			function emp(a,b,c)
+			{
+			class Employee
+			{				
+				set eid(a)
+				{
+					this.id = a;
+				}
+				get eid()
+				{
+					return this.a;
+				}
+				set ename(b)
+				{
+					this.name =b;
+				}
+				get ename()
+				{
+					return this.b;
+				}
+				set esalary(c)
+				{
+					this.salary = c;
+				}
+				get esalary()
+				{
+					return this.c;
+				}
+				netSalary()
+				{
+					return this.salary * 0.9;
+				}
+			}
+			var e1 = new Employee();
+			e1.id = a;
+			e1.name = b;
+			e1.salary =c;
+			
+			document.getElementById("demo1").innerHTML = "ID: " + e1.eid + 
+			"<br/>Name: " + e1.name + "<br/>Salary: " + e1.salary + "<br/>Net Salary: " + e1.netSalary();
+			}
+		</script>
+	</center>
+	</body>
+</html>

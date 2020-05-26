@@ -1,0 +1,64 @@
+<!--Create class Employee which has instance member id, name , salary, net salary. 
+Also Write getter setter for each instance member. Write calculate net salary function 
+whose job is to calculate net salary after deduction of 10 % TDS. Create 2 objects of 
+the class and call method(without contructor)-->
+<!doctype html>
+<html>
+	<body>
+	<center>
+		<h3>Q1</h3>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<script>
+			class Employee
+			{				
+				set eid(id)
+				{
+					this.id = id;
+				}
+				get eid()
+				{
+					return this.id;
+				}
+				set ename(name)
+				{
+					this.name = name;
+				}
+				get ename()
+				{
+					return this.name;
+				}
+				set esalary(salary)
+				{
+					this.salary = salary;
+				}
+				get esalary()
+				{
+					return this.salary;
+				}
+				netSalary()
+				{
+					return this.salary * 0.9;
+				}
+			}
+			
+			var e1 = new Employee();
+			e1.id = "100";
+			e1.name = "Prasad";
+			e1.salary = 1000;
+			
+			document.getElementById("demo1").innerHTML = "ID: " + e1.eid + 
+			"<br/>Name: " + e1.name + "<br/>Salary: " + e1.salary + "<br/>Net Salary: " + e1.netSalary();
+			
+			var e2 = new Employee();
+			e2.id = "101";
+			e2.name = "Abhi";
+			e2.salary = 10000;
+			
+			document.getElementById("demo2").innerHTML = "ID: " + e2.eid + 
+			"<br/>Name: " + e2.name + "<br/>Salary: " + e2.salary + "<br/>Net Salary: " + e2.netSalary();
+		</script>
+	</center>
+	</body>
+</html>
+			

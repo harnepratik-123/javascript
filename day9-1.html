@@ -1,0 +1,28 @@
+<!-- write a self invoking function  whose job is to print your name-->
+
+<!DOCTYPE html>
+<html>
+	<body>
+	<center>
+		<h2>Q1</h2>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<script>
+			var obj = {
+			Name:"Pratik",
+			myName: function() {
+			return this.Name;  //using object:
+			}
+		}
+		document.getElementById("demo1").innerHTML = obj.myName(); 
+		</script> 
+		<script>
+		function myFunction(name) {
+		return name;    //for self-invoking:
+		}
+		document.getElementById("demo2").innerHTML = window.myFunction("hello"); 
+		</script>
+	</center>
+	</script>
+	</body>
+</html>
