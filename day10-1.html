@@ -1,0 +1,19 @@
+<!--Write your name in red colour , on a button click it should change the text colour to blue -->
+
+<!Doctype html>
+<html>
+	<body>
+		<center>
+		<h3>question-2</h3>
+		<h1 id="name" >Pratik</h1><br/><br/>
+		<input type="button" onclick="changeAlign(this.value)" value="red" name="color"/>
+		<input type="button" onclick="changeAlign(this.value)" value="blue" name="color"/>
+		<script>
+			function changeAlign(colorname)
+			{
+				document.getElementById("name").style.color = colorname;
+			}
+		</script>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!--Write your name in p tag with background colour blue and text in white colour , 
+on button click it should reverse the colour ie. Text colour blue and background colour white-->
+<!Doctype html>
+<html>
+	<body>
+	<center>
+		<h3>question-3</h3>
+		<div style="background-color:blue;color:white">
+		<p id="name">Pratik</p>
+		</div><br/>
+		<button type="button" onclick="myFunction()">Reverse</button>
+		<button type="button" onclick="myFunction1()">Reverse Back</button>
+		<script>
+			function myFunction() {
+				document.getElementById("name").style.backgroundColor = "white";
+				document.getElementById("name").style.color = "blue";
+				}
+			function myFunction1() {
+				document.getElementById("name").style.backgroundColor = "blue";
+				document.getElementById("name").style.color = "white";
+				}
+		</script>
+	</center>
+	</body>
+</html>

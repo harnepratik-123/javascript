@@ -1,0 +1,28 @@
+<!--Write at least 3 paragraph about yourself.Create a button on click it should 
+count number of p tags used in document.Also give blue background colour to all p tags.-->
+<!Doctype html>
+<html>
+	<center>
+	<h3>question-7</h3>
+	<body>
+		<div>
+			<p>hello</p>
+			<p>how are you</p>
+			<p>i an fine</p>
+		</div>
+		<p id="result"></p>
+		<input type="button" value="check" onclick="count()">
+		
+		<script>
+			function count()
+			{
+				var count = document.getElementsByTagName("P").length;
+				for(var i=0; i<count;i++)
+				{
+					document.getElementsByTagName("P")[i].style.backgroundColor = "blue";
+				}
+				document.getElementById("result").innerHTML = "There are " + count + " p tags in this page.";
+			}
+		</script>
+	</body>
+</html>

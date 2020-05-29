@@ -1,0 +1,29 @@
+<!-- Create text box and a span tag , on change it should give error if user keeps text box empty-->
+<!Doctype html>
+<html>
+	<body>
+	<center>
+		<h3>question-10</h3>
+		Enter anything: <br/><br/>
+		
+		<input type="text" id="name" onchange="copy()" required/>
+		<span id = "txt"></span>
+		
+		<script>
+			function copy()
+			{
+				var txt = document.getElementById("name").value;
+				if (txt.length <= 0)
+				{
+					alert("Please enter something in textbox");
+					return false;
+				}
+				else
+				{
+					document.getElementById("txt").innerHTML = txt;					
+				}
+			}
+		</script>
+	</center>
+	</body>
+</html>
