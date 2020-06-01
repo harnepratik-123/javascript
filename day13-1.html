@@ -1,0 +1,27 @@
+<!-- Write a program to display a digital clock -->
+<!DOCTYPE html>
+	<html>
+		<body>
+		<center>
+			<button onclick="startTime()">Check Time</button>
+			<p id="txt"></p>
+		</center>
+		<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 50);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+		</body>
+</html>

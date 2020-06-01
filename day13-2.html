@@ -1,0 +1,16 @@
+<!-- On loading of the page it should display height and width of a screen in h2 tag -->
+
+<!DOCTYPE html>
+<html>
+	<body onload="sizescreen()">
+	<center>
+	<p id="demo"></p>
+	<script>
+		function sizescreen(){
+	document.getElementById("demo").innerHTML = 
+	"Available screen width is " + screen.availWidth + '<br/>' + "Available screen height is " + screen.availHeight;
+	}
+	</script>
+	</center>
+	</body>
+</html>
